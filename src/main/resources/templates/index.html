@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Front page</title>
+</head>
+<body>
+    <form action="queue/dbtest">
+    <input type="submit" value="Check connection to db" class="awesomebuttons"/>
+    </form>
+
+    <div>
+        <table>
+            <tr th:each="product : ${prod}">
+                <td th:text="${product.product_id}"></td>
+                <td th:text="${product.product_name}"></td>
+                <td th:text="${product.product_price}"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
