@@ -6,20 +6,37 @@
 </head>
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" id="nav-bar">
-                <li th:classappend="${module == 'tasks' ? 'active' : ''}">
-                    <a href="#" th:href="@{/task}">Products</a>
-                </li>
-                <li th:classappend="${module == 'home' ? 'active' : ''}">
-                    <a href="#" th:href="@{/}">About</a>
-                </li>
-                <li th:classappend="${module == 'home' ? 'active' : ''}">
-                    <a href="#" th:href="@{/}">Contact</a>
-                </li>
-            </ul>
-        </div>
+
+    <div class="header-container" th:fragment="header">
+        <!-- As a link -->
+        <nav class="navbar navbar-light bg-faded navbar-logo text-centered">
+            <img class="navbar-brand img-fluid rounded" src="/logo.jpg" />
+        </nav>
+
+        <nav class="nav-container" th:fragment="header">
+                <ul>
+                    <li th:classappend="${module == 'tasks' ? 'active' : ''}">
+                        <a href="#" th:href="@{/task}">Products</a>
+                    </li>
+                    <li th:classappend="${module == 'home' ? 'active' : ''}">
+                        <a href="#" th:href="@{/}">About</a>
+                    </li>
+                    <li th:classappend="${module == 'home' ? 'active' : ''}">
+                        <a href="#" th:href="@{/}">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav justify-content-end">
+                    <button class="btn btn-outline-success navbar-btn navbar-right">Cart</button>
+                    <button class="btn btn-outline-success navbar-btn navbar-right">Login</button>
+                </div>
+        </nav>
     </div>
+    <div class="container">
+    </div>
+
+<div th:fragment="footer">
+    &copy; 2016 Footer
+</div>
+
 </body>
 </html>
