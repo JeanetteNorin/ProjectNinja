@@ -6,17 +6,17 @@
 </head>
 <body>
 
-<div class="container">
+
     <div class="header-container" th:fragment="header">
-        <div class="navbar-header">
-            <a href="/index.html" class="navbar-brand">Hej</a>
-        </div>
-        <nav>
+        <!-- As a link -->
+        <nav class="navbar navbar-light bg-faded navbar-logo text-centered">
+            <img class="navbar-brand img-fluid rounded" src="/logo.jpg" />
+        </nav>
 
-
+        <nav class="nav-container" th:fragment="header">
                 <ul>
                     <li th:classappend="${module == 'tasks' ? 'active' : ''}">
-                        <a href="#" th:href="@{/products}">Products</a>
+                        <a href="#" th:href="@{/task}">Products</a>
                     </li>
                     <li th:classappend="${module == 'home' ? 'active' : ''}">
                         <a href="#" th:href="@{/}">About</a>
@@ -25,12 +25,13 @@
                         <a href="#" th:href="@{/}">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success navbar-btn navbar-right">Cart</button>
-                <button class="btn btn-outline-success navbar-btn navbar-right">Login</button>
-
+                <div class="nav justify-content-end">
+                    <button class="btn btn-outline-success navbar-btn navbar-right">Cart</button>
+                    <button class="btn btn-outline-success navbar-btn navbar-right">Login</button>
+                </div>
         </nav>
     </div>
-
+    <div class="container">
     </div>
 
 <div th:fragment="footer">
