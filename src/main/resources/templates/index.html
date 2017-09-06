@@ -10,6 +10,9 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <header>
+        <div th:replace="header :: header">...</div>
+    </header>
     <form action="queue/dbtest">
     <input type="submit" value="Check connection to db" class="awesomebuttons"/>
     </form>
