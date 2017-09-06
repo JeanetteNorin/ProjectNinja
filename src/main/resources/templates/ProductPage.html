@@ -9,16 +9,19 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <script src="script.js"></script>
 </head>
-<body id ="startPageBody">
+<body>
 <header>
     <div th:replace="header :: header">...</div>
 </header>
-
-    <div id="buttonContainer">
-        <a href ="/products" class="button">
-            Start Shopping
-        </a>
+<div>
+    <div id ="productListContainer">
+        <div th:each="product : ${prod}">
+            <img src="logo.jpg" id = "loopedImage"/>
+            <p th:text="${product.product_name}"></p>
+            <p th:text="${product.product_price}"></p>
+        </div>
     </div>
+</div>
 
 </body>
 </html>
