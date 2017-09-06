@@ -6,20 +6,36 @@
 </head>
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" id="nav-bar">
-                <li th:classappend="${module == 'tasks' ? 'active' : ''}">
-                    <a href="#" th:href="@{/task}">Products</a>
-                </li>
-                <li th:classappend="${module == 'home' ? 'active' : ''}">
-                    <a href="#" th:href="@{/}">About</a>
-                </li>
-                <li th:classappend="${module == 'home' ? 'active' : ''}">
-                    <a href="#" th:href="@{/}">Contact</a>
-                </li>
-            </ul>
+<div class="container">
+    <div class="header-container" th:fragment="header">
+        <div class="navbar-header">
+            <a href="/index.html" class="navbar-brand">Hej</a>
         </div>
+        <nav>
+
+
+                <ul>
+                    <li th:classappend="${module == 'tasks' ? 'active' : ''}">
+                        <a href="#" th:href="@{/products}">Products</a>
+                    </li>
+                    <li th:classappend="${module == 'home' ? 'active' : ''}">
+                        <a href="#" th:href="@{/}">About</a>
+                    </li>
+                    <li th:classappend="${module == 'home' ? 'active' : ''}">
+                        <a href="#" th:href="@{/}">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success navbar-btn navbar-right">Cart</button>
+                <button class="btn btn-outline-success navbar-btn navbar-right">Login</button>
+
+        </nav>
     </div>
+
+    </div>
+
+<div th:fragment="footer">
+    &copy; 2016 Footer
+</div>
+
 </body>
 </html>

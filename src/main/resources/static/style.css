@@ -1,5 +1,10 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
 
-
-nav-bar ul li {
-    font-family: 'Quicksand', sans-serif;
+li a {
+    display: block;
 }
