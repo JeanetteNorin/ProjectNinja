@@ -18,6 +18,6 @@ public class ProductListController {
     @GetMapping("/products")
     public ModelAndView printList() {
         return new ModelAndView("index")
-                .addObject("prod", prodRepo.printProductList());
+                .addObject("prod", prodRepo.getProductList());
     }
 }
