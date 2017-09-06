@@ -17,7 +17,13 @@ public class ProductListController {
     @ResponseBody
     @GetMapping("/products")
     public ModelAndView printList() {
-        return new ModelAndView("index")
+        return new ModelAndView("ProductPage")
                 .addObject("prod", prodRepo.printProductList());
     }
+
+    @GetMapping("/start")
+    public ModelAndView startPage() {
+        return new ModelAndView("index");
+    }
+
 }
