@@ -5,30 +5,20 @@
     <title>Front page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet" />
-    <link href="style.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <script src="script.js"></script>
 </head>
-<body>
+<body id ="startPageBody">
+<header>
+    <div th:replace="header :: header">...</div>
+</header>
 
-        <header>
-            <div th:replace="header :: header">...</div>
-        </header>
-
-            <form action="queue/dbtest">
-            <input type="submit" value="Check connection to db" class="awesomebuttons"/>
-            </form>
-
-            <div>
-                <table>
-                    <tr th:each="product : ${prod}">
-                        <td th:text="${product.product_id}"></td>
-                        <td th:text="${product.product_name}"></td>
-                        <td th:text="${product.product_price}"></td>
-                    </tr>
-                </table>
-            </div>
-        <div class="container">
-        </div>
+    <div id="buttonContainer">
+        <a href ="/products" class="button">
+            Start Shopping
+        </a>
+    </div>
+            
     <div th:replace="footer :: footer" >...</div>
 </body>
 </html>

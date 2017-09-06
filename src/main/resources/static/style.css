@@ -1,3 +1,65 @@
 * {
-    font-family: roboto, sans-serif;
+     font-family: 'Roboto', sans-serif;
+     /*height: 100%;*/
+     margin: 0;
+ }
+
+#startPageBody {
+    background-image: url('redd-angelo-11908.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    height: 100%;
+}
+
+#buttonContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+}
+
+.button {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 10px;
+    border-radius: 2px;
+    margin: 2px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-weight: 600;
+    background-color: #000000;
+    color: #ffffff;
+    width: 170px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    text-decoration: none;
+    box-shadow: 0 5px 15px #28A5A0;
+    color: #fff;
+
+}
+
+#productListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 30%;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+#loopedImage {
+    padding-bottom: 50px;
 }
