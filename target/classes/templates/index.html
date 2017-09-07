@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>Front page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="style.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <script src="script.js"></script>
 </head>
-<body>
-    <form action="queue/dbtest">
-    <input type="submit" value="Check connection to db" class="awesomebuttons"/>
-    </form>
+<body id ="startPageBody">
+<header>
+    <div th:replace="header :: header">...</div>
+</header>
 
-    <div>
-        <table>
-            <tr th:each="product : ${prod}">
-                <td th:text="${product.product_id}"></td>
-                <td th:text="${product.product_name}"></td>
-                <td th:text="${product.product_price}"></td>
-            </tr>
-        </table>
+    <div id="buttonContainer">
+        <a href ="/products" class="button">
+            Start Shopping
+        </a>
     </div>
-
+            
+    <div th:replace="footer :: footer" >...</div>
 </body>
 </html>

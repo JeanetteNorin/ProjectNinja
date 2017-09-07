@@ -5,6 +5,5 @@ package com.example.demo.Repos;
         import java.util.List;
 
 public interface ProdRepo {
-
     List<Product> getProductList();
 }
