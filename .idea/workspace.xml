@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89d73867-5dd4-4300-b7eb-13a0cdaf0180" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -773,12 +772,20 @@
       <workItem from="1504597950257" duration="12918000" />
       <workItem from="1504771828694" duration="390000" />
       <workItem from="1504772236439" duration="4403000" />
-      <workItem from="1504782306195" duration="1016000" />
+      <workItem from="1504782306195" duration="1033000" />
     </task>
+    <task id="LOCAL-00001" summary="added no reaction to the button">
+      <created>1504783343932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504783343932</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18727000" />
+    <option name="totallyTimeSpent" value="18744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -853,6 +860,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added no reaction to the button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added no reaction to the button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
