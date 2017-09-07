@@ -1,11 +1,5 @@
 package com.example.demo.Classes;
 
-
-import com.example.demo.Repos.ProdRepo;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
 
     public int product_id;
