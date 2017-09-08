@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Front page</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand%7CRoboto" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <script src="script.js"></script>
 </head>
@@ -16,15 +17,14 @@
         <div th:each="product : ${prod}" id="productContainer">
             <img th:src="${product.product_image + '.jpg'}" id="loopedImage"/>
             <div id="productOverviewInfo">
-            <p th:text="${product.product_name}"></p>
-            <p th:text="${product.product_price} + ' SEK'"></p>
+                <p th:text="${product.product_name}"></p>
+                <p th:text="${product.product_price} + ' SEK'"></p>
             </div>
         </div>
     </div>
 </div>
 <footer>
-<div th:replace="footer :: footer">...</div>
+    <div th:replace="footer :: footer">...</div>
 </footer>
 </body>
 </html>
-
