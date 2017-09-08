@@ -12,13 +12,12 @@
 
 
     <div class="header-container" th:fragment="header">
-        <!-- As a link -->
         <div class="nav-btn">
-            <button class="btn">Cart</button>
+            <a href="#" th:href="@{/shoppingcart}"><button class="btn">Cart</button></a>
             <button class="btn">Login</button>
         </div>
         <nav class="logo">
-            <img class="logo-img" src="/logo.jpg" />
+            <img class="logo-img" src="logo.jpg" />
         </nav>
 
         <nav class="nav-container" th:fragment="header">
