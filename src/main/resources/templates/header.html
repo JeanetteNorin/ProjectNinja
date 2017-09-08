@@ -12,18 +12,20 @@
 
 
     <div class="header-container" th:fragment="header">
+
         <div class="nav-btn">
             <a href="#" th:href="@{/shoppingcart}"><button class="btn">Cart</button></a>
             <button class="btn">Login</button>
         </div>
         <nav class="logo">
             <img class="logo-img" src="logo.jpg" />
+
         </nav>
 
         <nav class="nav-container" th:fragment="header">
                 <ul>
-                    <li th:classappend="${module == 'tasks' ? 'active' : ''}">
-                        <a href="#" th:href="@{/task}">Products</a>
+                    <li th:classappend="${module == 'products' ? 'active' : ''}">
+                        <a href="#" th:href="@{/products}">Products</a>
                     </li>
                     <li th:classappend="${module == 'home' ? 'active' : ''}">
                         <a href="#" th:href="@{/}">About</a>

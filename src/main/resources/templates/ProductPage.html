@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <script src="script.js"></script>
 </head>
-<body>
+<body id ="productBodyPage">
 <header>
     <div th:replace="header :: header">...</div>
 </header>
@@ -22,7 +22,9 @@
         </div>
     </div>
 </div>
-
+<footer>
+<div th:replace="footer :: footer">...</div>
+</footer>
 </body>
 </html>
 
