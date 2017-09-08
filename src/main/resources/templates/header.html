@@ -18,13 +18,13 @@
             <button class="btn">Login</button>
         </div>
         <nav class="logo">
-            <img class="logo-img" src="/logo.jpg" />
+            <img class="logo-img" src="/templogo.png" />
         </nav>
 
         <nav class="nav-container" th:fragment="header">
                 <ul>
-                    <li th:classappend="${module == 'tasks' ? 'active' : ''}">
-                        <a href="#" th:href="@{/task}">Products</a>
+                    <li th:classappend="${module == 'products' ? 'active' : ''}">
+                        <a href="#" th:href="@{/products}">Products</a>
                     </li>
                     <li th:classappend="${module == 'home' ? 'active' : ''}">
                         <a href="#" th:href="@{/}">About</a>

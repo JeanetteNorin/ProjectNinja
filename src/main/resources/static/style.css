@@ -1,6 +1,7 @@
 * {
      /*height: 100%;*/
      margin: 0;
+    /*border: 1px solid black;*/
  }
 
 body {
@@ -19,8 +20,16 @@ p {
     min-height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+/*#productBodyPage{*/
+    /*background-color: rgba(126,153,150,0.2);*/
+/*}*/
+
+#wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 10%;
 }
 
 html {
@@ -64,14 +73,20 @@ html {
     flex-direction: row;
     flex-flow: row wrap;
     align-items: center;
-    padding-top: 30%;
+    padding-top: 7%;
     justify-content: center;
     padding-left: 3%;
     padding-right: 3%;
 }
 
 #loopedImage {
-    padding-bottom: 50px;
+    padding-bottom: 2px;
+    width: 60%;
+}
+
+#loopedImage:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
 
 /***********************
@@ -101,6 +116,7 @@ nav a {
     color: black;
     height: 100%;
     margin: 0;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -121,6 +137,7 @@ nav a:hover {
 
 .logo {
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .nav-btn {
@@ -129,19 +146,30 @@ nav a:hover {
 }
 
 .btn {
+    font-size: 10px;
+    padding: 10px 10px;
+    border-radius: 2px;
     margin: 2px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-weight: 300;
+    background-color: #000000;
+    color: #ffffff;
+    width: 50px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .btn:hover {
     background-color: #7E9996;
+    border: 1px solid #7E9996;
 }
 
 .logo-img {
     display: flex;
     justify-content: center;
-    width: 50%;
     padding-bottom: 2px;
-    width: 70%;
 }
 
 #productContainer {
@@ -157,4 +185,26 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+footer {
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    color: #7E9996;
+    padding-left: 2px;
+    top: 1570px;
+    width: 99.9%;
+    background-color: #3d4a48;
+}
+
+#footerStart {
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    color: #7E9996;
+    padding-left: 2px;
+    top: 800px;
+    width: 99.9%;
+    background-color: #3d4a48;
 }
