@@ -19,12 +19,13 @@
             <div id="productOverviewInfo">
                 <p th:text="${product.product_name}"></p>
                 <p th:text="${product.product_price} + ' SEK'"></p>
+                <br/>
+                <form th:action="@{/shoppingcart/{id}/(id=${product.product_id})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+                </form>
             </div>
         </div>
     </div>
 </div>
-<footer>
-    <div th:replace="footer :: footer">...</div>
-</footer>
 </body>
+<div class="footer" th:replace="footer :: footer">...</div>
 </html>
