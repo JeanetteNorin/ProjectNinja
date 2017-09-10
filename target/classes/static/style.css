@@ -1,15 +1,13 @@
 * {
-     /*height: 100%;*/
      margin: 0;
-
  }
 
 body {
     font-family: 'Roboto', sans-serif;
-
-    /*height: 100%;*/
     margin: 0;
-    /*border: 1px solid black;*/
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
  }
 
 p {
@@ -74,83 +72,6 @@ html {
     flex-direction: row;
     flex-flow: row wrap;
     align-items: center;
-    padding-top: 30%;
-    justify-content: space-between;
-    padding-left: 3%;
-    padding-right: 3%;
-
-}
-
-#loopedImage {
-    padding-bottom: 50px;
-}
-
-/***********************
- ******NAVIGATION*******
- ***********************/
-
-li {
-    list-style: none;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    padding: 1rem 2rem;
-    color: black;
-    height: 100%;
-    margin: 0;
-}
-
-nav a:hover {
-    background-color: rgba(40, 165, 160, 0.2);
-    text-decoration: none;
-    color: black;
-}
-
-.header-container {
-    width: 100%;
-}
-
-.nav-container {
-    background-color: rgba(61, 74, 72, 0.8);
-    padding: 0;
-    height: 50px;
-}
-
-.logo {
-    width: 100%;
-}
-
-.nav-btn {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btn {
-    margin: 2px;
-}
-
-.btn:hover {
-    background-color: #7E9996;
-}
-
-.logo-img {
-    display: flex;
-    justify-content: center;
-    width: 50%;
     padding-top: 7%;
     justify-content: center;
     padding-left: 3%;
@@ -241,7 +162,7 @@ nav a:hover {
 
 .btn:hover {
     background-color: #7E9996;
-    border: 1px solid #7E9996;
+    bordeR: 1px solid #7E9996;
 }
 
 .logo-img {
@@ -249,6 +170,7 @@ nav a:hover {
     justify-content: center;
     padding-bottom: 2px;
 }
+
 
 #productContainer {
     display: flex;
@@ -265,24 +187,14 @@ nav a:hover {
     justify-content: center;
 }
 
-footer {
-    height: 25px;
+.footer {
+    height: 50px;
     position: absolute;
-    bottom: 10px;
-    color: #7E9996;
-    padding-left: 2px;
-    top: 1570px;
-    width: 99.9%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
     background-color: #3d4a48;
-}
-
-#footerStart {
-    height: 25px;
-    position: absolute;
-    bottom: 10px;
     color: #7E9996;
-    padding-left: 2px;
-    top: 800px;
-    width: 99.9%;
-    background-color: #3d4a48;
+    text-align: center;
 }

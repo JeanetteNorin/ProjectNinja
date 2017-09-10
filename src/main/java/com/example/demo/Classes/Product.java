@@ -26,4 +26,8 @@ public class Product {
 
     }
 
+    public Product(int product_id) {
+        this.product_id = product_id;
+    }
+
 }
