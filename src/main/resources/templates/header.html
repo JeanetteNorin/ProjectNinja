@@ -12,18 +12,21 @@
 
 
     <div class="header-container" th:fragment="header">
-
+        <img class="shoppingCart" src="shoppingCart.png" />
         <div class="nav-btn">
-            <a href="#" th:href="@{/shoppingcart}"><button class="btn">Cart</button></a>
+            <form method="post">
+                <!--th:action="@{/shoppingcart/{id}/(id=${product.product_id})}"-->
+                <input type="submit" value="Add to cart" class="btn"/>
+            </form>
             <button class="btn">Login</button>
         </div>
         <nav class="logo">
-            <img class="logo-img" src="logo.jpg" />
+            <img class="logo-img" src="templogo.png" />
 
         </nav>
 
         <nav class="nav-container" th:fragment="header">
-                <ul>
+                <ul class="menu">
                     <li th:classappend="${module == 'products' ? 'active' : ''}">
                         <a href="#" th:href="@{/products}">Products</a>
                     </li>
@@ -40,9 +43,9 @@
     <div class="container">
     </div>
 
-<div th:fragment="footer">
-    &copy; 2016 Footer
-</div>
 
 </body>
+<footer th:fragment="footer">
+    &copy; 2016 Footer
+</footer>
 </html>

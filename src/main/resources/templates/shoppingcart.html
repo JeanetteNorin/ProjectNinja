@@ -9,10 +9,16 @@
     <script src="script.js"></script>
 </head>
 <body>
-
+    <header>
+        <div th:replace="header :: header">...</div>
+    </header>
     <div id="cartContainer">
         <p>This is the content of your cart</p>
     </div>
 
-</body>
+
+    </body>
+
+    <div class="footer" th:replace="footer :: footer">...</div>
+
 </html>
