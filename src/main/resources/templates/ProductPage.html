@@ -6,6 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand%7CRoboto" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body id ="productBodyPage">
@@ -20,7 +21,7 @@
                 <p th:text="${product.product_name}"></p>
                 <p th:text="${product.product_price} + ' SEK'"></p>
                 <br/>
-                <form th:action="@{/shoppingcart/{id}/(id=${product.product_id})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+                <form th:action="@{/shoppingcart/{id}/(id=${product.product_id})}" method="post"><input type="submit" value="ADD" class="btn addToCartBtn"/>
                 </form>
             </div>
         </div>
