@@ -130,17 +130,18 @@ nav a:hover {
 }
 
 .nav-container {
-    background-color: rgba(61, 74, 72, 0.8);
     padding: 0;
     height: 50px;
-    width: 70%;
-    border-radius: 5px;
+    width: 100%;
 }
 .menu {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
+    width: 60%;
+    background-color: rgba(61, 74, 72, 0.8);
+    border-radius: 5px;
 }
 
 .logo {
