@@ -19,7 +19,7 @@ public class CartController {
     @PostMapping("/shoppingcart/{id}")
     public String addToCart(@PathVariable int id) {
         prodRepo.addToCart(id);
-        return "redirect:/start";
+        return "redirect:/products";
     }
 
     @GetMapping("/shoppingcart")

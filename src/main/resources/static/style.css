@@ -189,14 +189,14 @@ nav a:hover {
     right: 50px;
 }
 
-input[type=submit] {
-    background: url(shoppingcart.png);
-    border: 0;
-    position: fixed;
-    top: 1px;
-    right: 50px;
-    width: 200px;
-}
+/*input[type=submit] {*/
+    /*background: url(shoppingcart.png);*/
+    /*border: 0;*/
+    /*position: fixed;*/
+    /*top: 1px;*/
+    /*right: 50px;*/
+    /*width: 200px;*/
+/*}*/
 
 /***********************
  *****PRODUCT PAGE******
