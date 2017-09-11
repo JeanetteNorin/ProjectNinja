@@ -50,7 +50,6 @@ public class DbRepo implements ProdRepo {
                 product.productPrice = rs.getDouble("product_price");
                 product.productColor = rs.getString("product_color");
                 product.productSize = rs.getInt("product_size");
-//                product.stock = rs.getInt("stock");
                 product.productWeight = rs.getInt("product_weight");
             }
             return product;

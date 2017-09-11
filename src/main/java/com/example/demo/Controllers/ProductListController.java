@@ -27,6 +27,7 @@ public class ProductListController {
 
     @GetMapping("/start")
     public ModelAndView startPage() {
+
         return new ModelAndView("index");
     }
 }

@@ -1,7 +1,9 @@
 package com.example.demo.Classes;
 
-public class Product {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Product {
     public int productId;
     public String productName;
     public double productPrice;
@@ -27,5 +29,4 @@ public class Product {
     public Product(int productId) {
         this.productId = productId;
     }
-
 }
