@@ -1,6 +1,7 @@
 .idea
 *.iml
 target
+target/classes/
 target/generated-sources/
 target/generated-test-sources/
 src/main/resources/static/fragments/
