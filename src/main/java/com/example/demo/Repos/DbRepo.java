@@ -36,25 +36,26 @@ public class DbRepo implements ProdRepo {
 
 
     @Override
-    public Product addToCart(int id) {
+    public Product selectProduct(int id) {
         try (Connection conn = dataSource.getConnection();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery("SELECT product_id, product_name, " +
-                     "product_price, product_color, product_size, stock, product_weight, product_image, " +
-                     "product_description FROM Products where id=?")) {
+             PreparedStatement ps = conn.prepareStatement("SELECT product_id, product_name, " +
+                     "product_price, product_color, product_size, product_weight, product_image, " +
+                     "product_description FROM Products where product_id=?")) {
+            ps.setInt(1,id);
+            ResultSet rs = ps.executeQuery();
             Product product = new Product(id);
-            while (rs.next())
-                product = (rsProduct(rs));
-//                product.product_id = rs.getInt("product_id");
-//                product.product_name = rs.getString("product_name");
-//                product.product_price = rs.getDouble("product_price");
-//                product.product_color = rs.getString("product_color");
-//                product.product_size = rs.getInt("product_size");
+            while (rs.next()) {
+                product.productId = rs.getInt("product_id");
+                product.productName = rs.getString("product_name");
+                product.productPrice = rs.getDouble("product_price");
+                product.productColor = rs.getString("product_color");
+                product.productSize = rs.getInt("product_size");
 //                product.stock = rs.getInt("stock");
-//                product.product_weight = rs.getInt("product_weight");
-//
+                product.productWeight = rs.getInt("product_weight");
+            }
             return product;
         } catch (SQLException e){
+            System.out.println(e.getMessage());
             return null;
         }
     }
