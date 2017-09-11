@@ -17,8 +17,9 @@
     <img th:src="${prodDetails.productImage + '.jpg'}" id="loopedImage"/>
             <p th:text="${prodDetails.productName}"></p>
             <p th:text="${prodDetails.productPrice} + ' SEK'"></p>
+            <p th:text="${prodDetails.productDescription}"></p>
             <br/>
-            <form th:action="@{/shoppingcart/{id}/(id=${prodDetails.productId})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+            <form th:action="@{/shoppingcart/{id}/(id=${prodDetails.productId})}" method="post"><input type="submit" value="Add to cart" class="btn2"/>
             </form>
         </div>
 </body>

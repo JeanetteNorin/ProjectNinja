@@ -20,7 +20,7 @@
                 <p th:text="${product.productName}"></p>
                 <p th:text="${product.productPrice} + ' SEK'"></p>
                 <br/>
-                <form th:action="@{/shoppingcart/{id}/(id=${product.productId})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+                <form th:action="@{/shoppingcart/{id}/(id=${product.productId})}" method="post"><input type="submit" value="Add to cart" class="btn2"/>
                 </form>
             </div>
         </div>

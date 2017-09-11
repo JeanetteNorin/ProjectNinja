@@ -84,6 +84,11 @@ html {
     width: 60%;
 }
 
+#shoppingCartImage {
+    padding-bottom: 2px;
+    width: 20%;
+}
+
 #loopedImage:hover {
     opacity: 0.6;
     filter: alpha(opacity=60);
@@ -175,6 +180,26 @@ nav a:hover {
     border: 1px solid #7E9996;
 }
 
+.btn2 {
+    font-size: 10px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    margin: 2px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-weight: 300;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.btn2:hover {
+    background-color: #7E9996;
+    border: 1px solid #7E9996;
+}
+
 .logo-img {
     display: flex;
     justify-content: center;
@@ -224,6 +249,9 @@ nav a:hover {
 #cartContainer {
     height: 400px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /***********************

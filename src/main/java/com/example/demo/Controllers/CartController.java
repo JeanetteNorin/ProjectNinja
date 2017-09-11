@@ -17,10 +17,9 @@ public class CartController {
     @Autowired
     private ProdRepo prodRepo;
 
-//    @PostMapping("/shoppingcart/{id}")
-//    public String addToCart(@PathVariable int id) {
-//        prodRepo.selectProduct(id);
-//        return "redirect:/start";
+//    @GetMapping("/shoppingcart")
+//    public ModelAndView shoppingCart() {
+//        return new ModelAndView("shoppingcart");
 //    }
 
     @GetMapping("/shoppingcart")
