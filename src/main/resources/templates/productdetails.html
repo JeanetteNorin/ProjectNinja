@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Product details</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand%7CRoboto" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="script.js"></script>
+</head>
+<body id ="productBodyPage">
+<header>
+    <div th:replace="header :: header">...</div>
+</header>
+<div>
+    <!--<div th:each="product : ${prodDetails}">-->
+    <img th:src="${prodDetails.productImage + '.jpg'}" id="loopedImage"/>
+            <p th:text="${prodDetails.productName}"></p>
+            <p th:text="${prodDetails.productPrice} + ' SEK'"></p>
+            <br/>
+            <form th:action="@{/shoppingcart/{id}/(id=${prodDetails.productId})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+            </form>
+        </div>
+</body>
+<div class="footer" th:replace="footer :: footer">...</div>
+</html>

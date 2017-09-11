@@ -15,12 +15,12 @@
 <div>
     <div id ="productListContainer">
         <div th:each="product : ${prod}" id="productContainer">
-            <img th:src="${product.product_image + '.jpg'}" id="loopedImage"/>
+            <a th:href="@{/productdetails/{id}/(id=${product.productId})}"><img th:src="${product.productImage + '.jpg'}" id="loopedImage"/></a>
             <div id="productOverviewInfo">
-                <p th:text="${product.product_name}"></p>
-                <p th:text="${product.product_price} + ' SEK'"></p>
+                <p th:text="${product.productName}"></p>
+                <p th:text="${product.productPrice} + ' SEK'"></p>
                 <br/>
-                <form th:action="@{/shoppingcart/{id}/(id=${product.product_id})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
+                <form th:action="@{/shoppingcart/{id}/(id=${product.productId})}" method="post"><input type="submit" value="Add to cart" class="btn"/>
                 </form>
             </div>
         </div>

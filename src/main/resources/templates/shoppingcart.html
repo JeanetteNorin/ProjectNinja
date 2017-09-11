@@ -14,6 +14,17 @@
     </header>
     <div id="cartContainer">
         <p>This is the content of your cart</p>
+        <div>
+            <div id ="productListContainer">
+                <div th:each="product : ${session.cart.shoppingCart}" id="productContainer">
+                    <div id="productOverviewInfo">
+                        <p th:text="${product.productName}"></p>
+                        <p th:text="${product.productPrice} + ' SEK'"></p>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
